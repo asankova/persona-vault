@@ -72,16 +72,22 @@ persona-vault/
 │   ├── operations/
 │   │   ├── operations-manager.md
 │   │   └── procurement-manager.md
-│   └── people/
-│       ├── hr-business-partner.md
-│       ├── recruiter.md
-│       ├── learning-development-specialist.md
-│       └── executive-coach.md
-│   └── sales/
-│       ├── sales-strategist.md
-│       ├── customer-success-manager.md
-│       ├── solutions-engineer.md
-│       └── partnerships-manager.md
+│   ├── people/
+│   │   ├── hr-business-partner.md
+│   │   ├── recruiter.md
+│   │   ├── learning-development-specialist.md
+│   │   └── executive-coach.md
+│   ├── sales/
+│   │   ├── sales-strategist.md
+│   │   ├── customer-success-manager.md
+│   │   ├── solutions-engineer.md
+│   │   └── partnerships-manager.md
+│   └── creative/
+│       ├── product-designer.md
+│       ├── visual-designer.md
+│       ├── motion-designer.md
+│       ├── creative-director.md
+│       └── ux-ui-designer-with-prototyping.md
 ```
 
 ## How to use
@@ -102,6 +108,14 @@ Every persona follows the same format:
 - **Anti-Patterns** — Things you NEVER do (critical for keeping AI on track)
 - **How You Communicate** — Tone, audience adaptation, default phrases
 - **Expected Outputs** — What deliverables this persona produces
+
+## Experimental: autonomous UI prototyping
+
+The `creative/ux-ui-designer-with-prototyping.md` persona includes an experimental workflow for generating working HTML/CSS/JS prototypes autonomously using the **Gemini API** (no browser, no OAuth required).
+
+The agent writes a structured design brief, calls `gemini-2.0-flash` via the Gemini API, and produces a self-contained HTML file that opens directly in the browser. No human intervention needed beyond providing a `GEMINI_API_KEY` environment variable.
+
+> Google Stitch (stitch.withgoogle.com) is also documented in that persona for manual use — it requires Google account authentication and has no public API, so it is not suitable for agentic automation.
 
 ## Contributing
 
